@@ -35,7 +35,7 @@ export const Header = async ({ cart }: Props) => {
   });
 
   const data = readFragment(HeaderFragment, response).site;
-
+  console.log(data, 'data', response, 'response')
   /**  To prevent the navigation menu from overflowing, we limit the number of categories to 6.
    To show a full list of categories, modify the `slice` method to remove the limit.
    Will require modification of navigation menu styles to accommodate the additional categories.
